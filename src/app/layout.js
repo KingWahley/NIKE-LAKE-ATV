@@ -22,8 +22,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "NAUTICA BEACH AT",
-  description: "Brutalist Digital Experience",
+  title: "NIKE LAKE ATV",
+  description:
+    "Exciting ATV experience at Nike Lake — perfect for friends, families, and group outings looking for adventure and fun.",
   icons: {
     icon: "/images/logo.png",
     shortcut: "/images/logo.png",
