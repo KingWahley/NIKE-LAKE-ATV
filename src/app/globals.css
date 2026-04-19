@@ -43,7 +43,7 @@ body {
 
 ::selection {
   background: var(--color-brand-black);
-  color: var(--color-[#758BFD]);
+  
 }
 
 /* Base resets for brutalist look */

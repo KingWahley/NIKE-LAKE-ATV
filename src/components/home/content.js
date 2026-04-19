@@ -2,7 +2,7 @@ export const heroContent = {
   title: "NIKE LAKE ATV",
   description:
     "Welcome to an exciting ATV experience at Nike Lake — perfect for friends, families, and group outings looking for adventure and fun.",
-  image: "/images/hero.jpg",
+  image: "/images/hero.JPG",
   primaryAction: {
     href: "/book-now",
     label: "BOOK NOW",
