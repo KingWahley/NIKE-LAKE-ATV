@@ -8,9 +8,9 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 flex-wrap justify-center">
-        <span>09133333436</span>
-        <span>Leisuresportsatv@gmail.com</span>
-        <span>Nautica Beach Resort, Elegushi</span>
+        <span>07044224257</span>
+        <span>Lagosatv@gmail.com</span>
+        <span>Nike Lake Hotel Resort, Enugu</span>
       </div>
 
       <div className="flex gap-4 lg:gap-8 flex-wrap justify-center shrink-0 mt-4 lg:mt-0">

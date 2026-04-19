@@ -1,6 +1,7 @@
 export default function Contact() {
   return (
-    <main className="flex-1 w-full pt-[200px] px-8 max-w-[1600px] mx-auto pb-24">
+    <main className="flex-1 w-full pt-[200px] px-8 max-w-[1600px] mx-auto pb-24" >
+      
       <h1 className="font-archivo text-[10vw] xl:text-[8vw] uppercase leading-[0.85] tracking-[-0.04em] mb-16 selection:bg-brand-black selection:text-[#758BFD]">
         CONTACT US
       </h1>

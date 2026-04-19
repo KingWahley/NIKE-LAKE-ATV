@@ -2,24 +2,20 @@ import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    "/images/IMG_0471.JPG",
-    "/images/IMG_0472.JPG",
-    "/images/IMG_0473.JPG",
-    "/images/IMG_0474.JPG",
-    "/images/IMG_0475.JPG",
-    "/images/IMG_0476.JPG",
-    "/images/IMG_0477.JPG",
-    "/images/IMG_0478.JPG",
-    "/images/IMG_0479.JPG",
-    "/images/IMG_0480.JPG",
-    "/images/IMG_0481.JPG",
-    "/images/IMG_0482.JPG",
-    "/images/IMG_0483.JPG",
-    "/images/IMG_0484.JPG",
-    "/images/IMG_0485.JPG",
-    "/images/IMG_0486.JPG",
-    "/images/eZy Watermark_31-08-2023_09-59-33-2630AM.JPG",
-    "/images/hero.JPG",
+    "/images/1.webp",
+    "/images/2.webp",
+    "/images/3.webp",
+    "/images/4.webp",
+    "/images/5.webp",
+    "/images/6.webp",
+    "/images/7.webp",
+    "/images/8.webp",
+    "/images/9.webp",
+    "/images/10.webp",
+    "/images/11.webp",
+    "/images/12.webp",
+    "/images/13.webp",
+    ,
   ];
 
   return (
