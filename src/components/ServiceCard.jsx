@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
 const cardVariants = {
   hidden: {
@@ -45,24 +45,30 @@ const cardItemVariants = {
   },
 };
 
-export default function ServiceCard({ index, title, tags, image, href = "/book-now" }) {
+export default function ServiceCard({
+  index,
+  title,
+  tags,
+  image,
+  href = "/book-now",
+}) {
   return (
     <Link href={href} className="block w-full">
-      <motion.div 
+      <motion.div
         variants={cardVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.28 }}
-        className="group relative w-full border-t border-white/20 transition-colors duration-300 hover:bg-white/5 cursor-pointer hover:z-50 px-8 py-12 flex flex-col md:flex-row items-baseline gap-8"
+        className="group relative w-full border-t border-white/20 transition-colors duration-300 hover:bg-black/5 cursor-pointer hover:z-50 px-8 py-12 flex flex-col md:flex-row items-baseline gap-8"
       >
         {/* Mobile Background Image */}
         {image && (
-          <div 
+          <div
             className="absolute inset-0 z-0 md:hidden opacity-30 transition-opacity duration-300 group-hover:opacity-50"
-            style={{ 
-              backgroundImage: `url(${image})`, 
-              backgroundSize: 'cover', 
-              backgroundPosition: 'center'
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           />
         )}
@@ -70,11 +76,11 @@ export default function ServiceCard({ index, title, tags, image, href = "/book-n
         {/* Index */}
         <motion.div
           variants={cardItemVariants}
-          className="relative z-10 font-mono text-brand-orange text-xl font-bold shrink-0 w-24"
+          className="relative z-10 font-mono text-[#758BFD] text-xl font-bold shrink-0 w-24"
         >
           {index < 10 ? `0${index}` : index}
         </motion.div>
-        
+
         {/* Content */}
         <motion.div
           variants={cardContentVariants}
@@ -82,7 +88,7 @@ export default function ServiceCard({ index, title, tags, image, href = "/book-n
         >
           <motion.h3
             variants={cardItemVariants}
-            className="font-archivo text-[7vw] leading-[0.85] uppercase tracking-[-0.04em] text-brand-orange m-0 max-w-[70%]"
+            className="font-archivo text-[7vw] leading-[0.85] uppercase tracking-[-0.04em] text-[#758BFD] m-0 max-w-[70%]"
           >
             {title}
           </motion.h3>
@@ -94,19 +100,17 @@ export default function ServiceCard({ index, title, tags, image, href = "/book-n
               <motion.span
                 key={i}
                 variants={cardItemVariants}
-                className="bg-brand-white px-4 py-2 rounded-full"
+                className="bg-brand-white px-4 py-2 rounded-full border-2 border-[#758BFD]"
               >
                 {tag}
               </motion.span>
             ))}
           </motion.div>
         </motion.div>
-        
+
         {/* Static Image Reveal (Visible on Desktop only) */}
         {image && (
-          <div 
-            className="absolute right-0 md:right-32 lg:right-29 top-1/2 -translate-y-1/2 w-[300px] h-[200px] pointer-events-none z-20 transition-all duration-[500ms] ease-out hidden md:block opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
-          >
+          <div className="absolute right-0 md:right-32 lg:right-29 top-1/2 -translate-y-1/2 w-[300px] h-[200px] pointer-events-none z-20 transition-all duration-[500ms] ease-out hidden md:block opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
             <Image
               src={image}
               alt={title}
@@ -120,7 +124,7 @@ export default function ServiceCard({ index, title, tags, image, href = "/book-n
         {/* Reveal Arrow */}
         <motion.div
           variants={cardItemVariants}
-          className="relative z-10 text-brand-orange transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100 group-hover:-rotate-45 ml-auto self-center pl-8 md:pl-0"
+          className="relative z-10 text-[#758BFD] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100 group-hover:-rotate-45 ml-auto self-center pl-8 md:pl-0"
         >
           <ArrowRight className="w-12 h-12 md:w-20 md:h-20" strokeWidth={3} />
         </motion.div>

@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${archivo.variable} ${spaceMono.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-inter bg-brand-orange text-brand-black">
+      <body className="min-h-full flex flex-col font-inter bg-[#758BFD] text-brand-black">
         <Navbar />
         {children}
         <CTASection />

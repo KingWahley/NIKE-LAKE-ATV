@@ -45,7 +45,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-brand-orange/10 backdrop-blur-xs z-0" />
+      <div className="absolute inset-0 bg-[#758BFD]/10 backdrop-blur-xs z-0" />
 
       <motion.div
         variants={heroContentVariants}
@@ -55,7 +55,7 @@ export default function HeroSection() {
       >
         <motion.h1
           variants={heroItemVariants}
-          className="font-archivo text-5xl leading-[0.85] tracking-[-0.04em] text-center w-full break-words mb-6 selection:bg-brand-black selection:text-brand-orange mt-0 md:mt-auto md:text-7xl"
+          className="font-archivo text-5xl leading-[0.85] tracking-[-0.04em] text-center w-full break-words mb-6 selection:bg-brand-black selection:text-[#758BFD] mt-0 md:mt-auto md:text-7xl"
         >
           {heroContent.title}
         </motion.h1>

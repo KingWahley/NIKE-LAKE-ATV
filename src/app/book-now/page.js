@@ -7,7 +7,7 @@ export default function BookNow() {
           'url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png")',
       }}
     >
-      <h1 className="font-archivo hidden sm:block text-[12vw] uppercase leading-[0.85] tracking-[-0.04em] mb-16 selection:bg-brand-black selection:text-brand-orange break-words">
+      <h1 className="font-archivo hidden sm:block text-[12vw] uppercase leading-[0.85] tracking-[-0.04em] mb-16 selection:bg-brand-black selection:text-[#758BFD] break-words">
         BOOK NOW
       </h1>
 
@@ -18,7 +18,7 @@ export default function BookNow() {
           </h2>
 
           <div className="border-2 border-brand-black p-8 font-mono mb-8 uppercase font-bold text-sm bg-brand-white shadow-[8px_8px_0_0_#000]">
-            <h3 className="font-archivo text-3xl mb-4 text-brand-orange">
+            <h3 className="font-archivo text-3xl mb-4 text-[#758BFD]">
               Individual Rides
             </h3>
             <div className="mb-8">
@@ -58,7 +58,7 @@ export default function BookNow() {
           </div>
 
           <div className="border-2 border-brand-black p-8 font-mono uppercase font-bold text-sm bg-brand-white shadow-[8px_8px_0_0_#000]">
-            <h3 className="font-archivo text-3xl mb-4 text-brand-orange">
+            <h3 className="font-archivo text-3xl mb-4 text-[#758BFD]">
               Group Packages
             </h3>
             <ul className="space-y-8 text-base">
@@ -94,21 +94,21 @@ export default function BookNow() {
             Process
           </h2>
           <ol className="list-none font-mono text-xl lg:text-3xl uppercase font-bold leading-none space-y-4">
-            <li className="border-2 border-brand-black p-6 bg-brand-orange flex gap-6 items-center">
+            <li className="border-2 border-brand-black p-6 bg-[#758BFD] flex gap-6 items-center">
               <span className="text-white">01</span> Select your ride
             </li>
             <li className="border-2 border-brand-black p-6 bg-brand-black text-white flex gap-6 items-center">
-              <span className="text-brand-orange">02</span> Choose date & time
+              <span className="text-[#758BFD]">02</span> Choose date & time
             </li>
             <li className="border-2 border-brand-black p-6 bg-brand-white flex gap-6 items-center">
-              <span className="text-brand-orange">03</span> Confirm booking
+              <span className="text-[#758BFD]">03</span> Confirm booking
             </li>
             <li className="border-2 border-brand-black p-6 bg-brand-white flex gap-6 items-center">
-              <span className="text-brand-orange">04</span> Make payment
+              <span className="text-[#758BFD]">04</span> Make payment
             </li>
           </ol>
           <div className="mt-16">
-            <button className="w-full bg-brand-black text-brand-white py-8 uppercase font-mono font-bold text-3xl hover:bg-brand-orange hover:text-brand-black border-2 border-brand-black transition-colors rounded-full text-center block">
+            <button className="w-full bg-brand-black cursor-pointer text-brand-white py-8 uppercase font-mono font-bold text-3xl hover:bg-[#758BFD] hover:text-brand-black border-2 border-brand-black transition-colors rounded-full text-center block">
               Proceed
             </button>
           </div>

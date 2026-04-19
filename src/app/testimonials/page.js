@@ -7,7 +7,7 @@ export default function Testimonials() {
 
   return (
     <main className="flex-1 w-full pt-[200px] px-8 max-w-[1600px] mx-auto pb-24">
-      <h1 className="font-archivo text-[10vw] uppercase leading-[0.85] tracking-[-0.04em] mb-16 selection:bg-brand-black selection:text-brand-orange text-center">
+      <h1 className="font-archivo text-[10vw] uppercase leading-[0.85] tracking-[-0.04em] mb-16 selection:bg-brand-black selection:text-[#758BFD] text-center">
         TESTIMONIALS
       </h1>
 
@@ -20,7 +20,7 @@ export default function Testimonials() {
             <p className="font-archivo text-3xl uppercase leading-tight mb-8 text-brand-black">
               &quot;{review}&quot;
             </p>
-            <div className="font-mono text-sm uppercase text-brand-orange font-bold text-right tracking-widest">
+            <div className="font-mono text-sm uppercase text-[#758BFD] font-bold text-right tracking-widest">
               - Guest
             </div>
           </div>

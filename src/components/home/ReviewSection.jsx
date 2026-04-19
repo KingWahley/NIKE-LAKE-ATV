@@ -31,7 +31,7 @@ const cardVariants = {
 
 export default function ReviewSection() {
   return (
-    <section className="relative overflow-hidden bg-brand-orange px-4 py-24 uppercase selection:bg-brand-black selection:text-brand-orange md:px-8">
+    <section className="relative overflow-hidden bg-[#758BFD] px-4 py-24 uppercase selection:bg-brand-black selection:text-[#758BFD] md:px-8">
       <div className="absolute inset-x-0 top-0 h-px bg-brand-black/20" />
 
       <motion.div
@@ -58,8 +58,8 @@ export default function ReviewSection() {
             className="flex flex-col justify-between gap-6 border-t-2 border-brand-black pt-6 md:border-l-2 md:border-t-0 md:pl-8 md:pt-0"
           >
             <p className="max-w-xl font-mono text-sm font-bold leading-7 text-brand-black">
-              FAST RIDES. CLEAN SETUP. LAKE-SIDE ADVENTURE MEMORIES THAT STICK WITH
-              YOU.
+              FAST RIDES. CLEAN SETUP. LAKE-SIDE ADVENTURE MEMORIES THAT STICK
+              WITH YOU.
             </p>
             <Link
               href="/testimonials"
@@ -79,7 +79,7 @@ export default function ReviewSection() {
             >
               <div className="flex items-start justify-between gap-4 border-b-2 border-brand-black pb-4 font-mono text-[9px] font-bold tracking-[0.18em] text-brand-black">
                 <span>{`0${index + 1}`}</span>
-                <span className="rounded-full bg-brand-orange px-3 py-1">
+                <span className="rounded-full bg-[#758BFD] px-3 py-1">
                   {review.highlight}
                 </span>
               </div>
@@ -95,7 +95,7 @@ export default function ReviewSection() {
                     {review.detail}
                   </p>
                 </div>
-                <div className="text-[1.7rem] leading-none text-brand-orange transition-transform duration-300 group-hover:rotate-12">
+                <div className="text-[1.7rem] leading-none text-[#758BFD] transition-transform duration-300 group-hover:rotate-12">
                   +
                 </div>
               </div>

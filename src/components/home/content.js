@@ -19,7 +19,7 @@ export const heroContent = {
 
 export const marqueeRows = [
   {
-    className: "text-brand-orange",
+    className: "text-[#758BFD]",
     animationClassName: "animate-marquee",
     items: "PREMIUM ATV EXPERIENCE - LAKE-SIDE ADVENTURE -",
   },
@@ -75,5 +75,4 @@ export const reviews = [
     detail: "WEEKEND PLAN",
     highlight: "NO STRESS",
   },
-  
 ];

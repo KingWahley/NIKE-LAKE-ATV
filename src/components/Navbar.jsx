@@ -135,9 +135,9 @@ export default function Navbar() {
               aria-current={isActiveLink(item.href) ? "page" : undefined}
               className={`px-3 py-1 uppercase font-bold tracking-[-0.02em] whitespace-nowrap rounded transition-colors ${
                 isActiveLink(item.href)
-                  ? "text-brand-orange"
+                  ? "text-[#758BFD]"
                   : isScrolled
-                    ? "hover:bg-brand-orange hover:text-brand-black"
+                    ? "hover:bg-[#758BFD] hover:text-brand-black"
                     : "hover:bg-brand-white hover:text-brand-black"
               }`}
             >
@@ -147,10 +147,16 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex font-bold pointer-events-auto gap-4 uppercase shrink-0">
-          <a href="#" className={isScrolled ? "hover:text-brand-orange" : "hover:text-white"}>
+          <a
+            href="#"
+            className={isScrolled ? "hover:text-[#758BFD]" : "hover:text-white"}
+          >
             TW
           </a>
-          <a href="#" className={isScrolled ? "hover:text-brand-orange" : "hover:text-white"}>
+          <a
+            href="#"
+            className={isScrolled ? "hover:text-[#758BFD]" : "hover:text-white"}
+          >
             IG
           </a>
         </div>
@@ -162,7 +168,7 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen((open) => !open)}
           className={`md:hidden relative z-20 flex h-14 w-14 items-center justify-center border-2 transition-colors ${
             isMenuOpen || isScrolled
-              ? "border-brand-white bg-brand-orange text-brand-black"
+              ? "border-brand-white bg-[#758BFD] text-brand-black"
               : "border-brand-black bg-brand-black text-brand-white rounded-full"
           }`}
         >
@@ -194,7 +200,7 @@ export default function Navbar() {
               exit="exit"
               className="md:hidden absolute top-full left-0 right-0 mt-3 origin-top"
             >
-              <div className="max-h-[calc(100dvh-7rem)] overflow-y-auto overflow-x-hidden overscroll-contain mobile-nav-scroll border-2 border-brand-black bg-brand-orange text-brand-black shadow-[10px_10px_0_0_#000000]">
+              <div className="max-h-[calc(100dvh-7rem)] overflow-y-auto overflow-x-hidden overscroll-contain mobile-nav-scroll border-2 border-brand-black bg-[#758BFD] text-brand-black shadow-[10px_10px_0_0_#000000]">
                 <div className="grid grid-cols-3 border-b-2 border-brand-black">
                   <div className="h-3 bg-brand-black" />
                   <div className="h-3 bg-brand-white border-x-2 border-brand-black" />
@@ -203,7 +209,9 @@ export default function Navbar() {
 
                 <div className="px-4 py-4">
                   <div className="mb-4 flex items-center justify-between border-2 border-brand-black bg-brand-white px-4 py-3">
-                    <span className="font-archivo text-2xl leading-none">MENU</span>
+                    <span className="font-archivo text-2xl leading-none">
+                      MENU
+                    </span>
                     <span className="text-[10px] font-bold tracking-[0.25em]">
                       ......
                     </span>
@@ -215,10 +223,12 @@ export default function Navbar() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          aria-current={isActiveLink(item.href) ? "page" : undefined}
+                          aria-current={
+                            isActiveLink(item.href) ? "page" : undefined
+                          }
                           className={`flex items-center justify-between border-2 border-brand-black px-4 py-4 transition-colors ${
                             isActiveLink(item.href)
-                              ? "bg-brand-black text-brand-orange"
+                              ? "bg-brand-black text-[#758BFD]"
                               : "bg-brand-black text-brand-white hover:bg-brand-white hover:text-brand-black"
                           }`}
                         >
