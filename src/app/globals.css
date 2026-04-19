@@ -59,3 +59,13 @@ body {
 .mobile-nav-scroll::-webkit-scrollbar {
   display: none;
 }
+
+
+.hero-stroke {
+  color: black; /* your fill */
+  text-shadow:
+    1px 1px 0 white,
+   -1px 1px 0 white,
+    1px -1px 0 white,
+   -1px -1px 0 white;
+}
