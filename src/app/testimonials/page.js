@@ -15,7 +15,7 @@ export default function Testimonials() {
         {reviews.map((review) => (
           <div
             key={review}
-            className="border-2 border-brand-black p-12 bg-white flex flex-col justify-between shadow-[8px_8px_0_0_#FF4D00] hover:translate-y-[-8px] transition-transform"
+            className="border-2 border-brand-black p-12 bg-white flex flex-col justify-between shadow-[8px_8px_0_0_#758BFD] hover:translate-y-[-8px] transition-transform"
           >
             <p className="font-archivo text-3xl uppercase leading-tight mb-8 text-brand-black">
               &quot;{review}&quot;

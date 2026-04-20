@@ -16,7 +16,7 @@ const sectionVariants = {
 
 export default function ExperienceSection() {
   return (
-    <section className="bg-brand-white text-white py-2 sm:py-8 mb-24 selection:bg-[#758BFD] selection:text-brand-black">
+    <section className="mb-24 bg-brand-white py-2 text-brand-black selection:bg-[#758BFD] selection:text-brand-white sm:py-8">
       <motion.div
         className="max-w-[1600px] mx-auto relative"
         variants={sectionVariants}
@@ -25,7 +25,7 @@ export default function ExperienceSection() {
         viewport={{ once: true, amount: 0.18 }}
       >
         <ExperienceList items={experiences} />
-        <div className="border-t border-white/20 w-full" />
+        <div className="w-full border-t border-brand-black/20" />
       </motion.div>
     </section>
   );
