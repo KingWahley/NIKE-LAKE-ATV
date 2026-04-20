@@ -19,7 +19,7 @@ export default function Contact() {
             <h3 className="font-mono text-sm font-bold uppercase text-[#758BFD] mb-4 border-b-2 border-brand-black inline-block tracking-widest">
               Email
             </h3>
-            <p className="font-archivo text-4xl lg:text-[4vw] uppercase hover:text-white transition-colors break-words leading-none text-brand-black">
+            <p className="font-archivo text-4xl lg:text-[4vw] uppercase  transition-colors break-words leading-none text-brand-black">
               Lagosatv
               <br />
               @gmail.com
@@ -29,7 +29,7 @@ export default function Contact() {
             <h3 className="font-mono text-sm font-bold uppercase text-[#758BFD] mb-4 border-b-2 border-brand-black inline-block tracking-widest">
               Location
             </h3>
-            <p className="font-archivo text-4xl lg:text-5xl uppercase leading-none hover:text-white transition-colors text-brand-black">
+            <p className="font-archivo text-4xl lg:text-5xl uppercase leading-none  transition-colors text-brand-black">
               Nike Lake
               <br />
               Hotel Resort, Enugu

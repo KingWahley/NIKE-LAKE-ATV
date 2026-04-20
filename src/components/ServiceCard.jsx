@@ -69,7 +69,7 @@ export default function ServiceCard({
         {/* Mobile Background Image */}
         {image && (
           <div
-            className="absolute inset-0 z-0 md:hidden opacity-20 transition-opacity duration-300 group-hover:opacity-30"
+            className="absolute inset-0 z-0 md:hidden opacity-60 transition-opacity duration-300 group-hover:opacity-30"
             style={{
               backgroundImage: `linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,255,255,0.78)), url(${image})`,
               backgroundSize: "cover",
@@ -93,7 +93,7 @@ export default function ServiceCard({
         >
           <motion.h3
             variants={cardItemVariants}
-            className="m-0 max-w-full font-archivo text-5xl leading-[0.85] uppercase tracking-[-0.04em] text-brand-black transition-colors duration-300 group-hover:text-[#758BFD] md:max-w-[70%] md:text-[7vw]"
+            className="m-0 max-w-full font-archivo text-5xl leading-[0.85] uppercase tracking-[-0.04em] text-[#758BFD] md:text-brand-black transition-colors duration-300 group-hover:text-[#758BFD] md:max-w-[70%] md:text-[7vw]"
           >
             {title}
           </motion.h3>
@@ -130,7 +130,7 @@ export default function ServiceCard({
               alt={title}
               fill
               sizes="300px"
-              className="h-full w-full rounded-none border-4 border-brand-white object-cover shadow-[14px_14px_0_0_rgba(255,77,0,0.95)]"
+              className="h-full w-full rounded-none border-4 border-brand-white object-cover shadow-[14px_14px_0_0_rgba(117,139,253,1)]"
             />
           </div>
         )}

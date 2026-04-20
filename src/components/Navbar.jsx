@@ -8,13 +8,13 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
   { href: "/", label: "HOME" },
-  { href: "/book-now", label: "Book Now" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "ABOUT" },
   { href: "/gallery", label: "GALLERY" },
-  { href: "/faqs", label: "FAQ" },
-  { href: "/rules", label: "Rules" },
+  { href: "/testimonials", label: "TESTIMONIALS" },
+  { href: "/faqs", label: "FAQS" },
+  { href: "/rules", label: "RULES" },
   { href: "/waiver", label: "WAIVER" },
-  { href: "/contact-us", label: "Contact" },
+  { href: "/contact-us", label: "CONTACT" },
 ];
 
 const mobileMenuVariants = {
@@ -133,12 +133,18 @@ export default function Navbar() {
               key={item.href}
               href={item.href}
               aria-current={isActiveLink(item.href) ? "page" : undefined}
-              className={`px-3 py-1 uppercase font-bold tracking-[-0.02em] whitespace-nowrap rounded transition-colors ${
+              className={`px-3 py-1 uppercase font-bold tracking-[-0.02em] whitespace-nowrap rounded border transition-colors ${
                 isActiveLink(item.href)
-                  ? "text-[#758BFD]"
-                  : isScrolled
-                    ? "hover:bg-[#758BFD] hover:text-brand-black"
-                    : "hover:bg-brand-white hover:text-brand-black"
+                  ? item.isCta
+                    ? "border-[#758BFD] bg-[#758BFD] text-brand-white"
+                    : "border-transparent text-[#758BFD]"
+                  : item.isCta
+                    ? isScrolled
+                      ? "border-[#758BFD] bg-[#758BFD] text-brand-white hover:bg-brand-white hover:text-brand-black hover:border-brand-white"
+                      : "border-[#758BFD] bg-[#758BFD] text-brand-white hover:bg-brand-white hover:text-brand-black hover:border-brand-white"
+                    : isScrolled
+                      ? "border-transparent hover:bg-[#758BFD] hover:text-brand-black"
+                      : "border-transparent hover:bg-brand-white hover:text-brand-black"
               }`}
             >
               {item.label}
@@ -146,20 +152,18 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex font-bold pointer-events-auto gap-4 uppercase shrink-0">
-          <a
-            href="#"
-            className={isScrolled ? "hover:text-[#758BFD]" : "hover:text-white"}
-          >
-            TW
-          </a>
-          <a
-            href="#"
-            className={isScrolled ? "hover:text-[#758BFD]" : "hover:text-white"}
-          >
-            IG
-          </a>
-        </div>
+        <Link
+          href="/book-now"
+          className={`hidden shrink-0 items-center justify-center border-2 px-5 py-3 font-bold uppercase tracking-[0.16em] transition-colors md:inline-flex ${
+            isScrolled
+              ? "border-[#758BFD] bg-[#758BFD] text-brand-white hover:border-brand-white hover:bg-brand-white hover:text-brand-black"
+              : "pointer-events-none opacity-0"
+          }`}
+          aria-hidden={!isScrolled}
+          tabIndex={isScrolled ? 0 : -1}
+        >
+          Book Now
+        </Link>
 
         <button
           type="button"
@@ -228,8 +232,12 @@ export default function Navbar() {
                           }
                           className={`flex items-center justify-between border-2 border-brand-black px-4 py-4 transition-colors ${
                             isActiveLink(item.href)
-                              ? "bg-brand-black text-[#758BFD]"
-                              : "bg-brand-black text-brand-white hover:bg-brand-white hover:text-brand-black"
+                              ? item.isCta
+                                ? "bg-[#758BFD] text-brand-white"
+                                : "bg-brand-black text-[#758BFD]"
+                              : item.isCta
+                                ? "bg-brand-white text-brand-black hover:bg-[#758BFD] hover:text-brand-white"
+                                : "bg-brand-black text-brand-white hover:bg-brand-white hover:text-brand-black"
                           }`}
                         >
                           <span className="font-archivo text-2xl leading-none">
@@ -243,22 +251,14 @@ export default function Navbar() {
                     ))}
                   </motion.div>
 
-                  <motion.div
-                    variants={mobileItemVariants}
-                    className="mt-4 grid grid-cols-2 gap-2"
-                  >
-                    <a
-                      href="#"
-                      className="border-2 border-brand-black bg-brand-white px-4 py-3 text-center font-bold tracking-[0.2em] transition-colors hover:bg-brand-black hover:text-brand-white"
+                  <motion.div variants={mobileItemVariants} className="mt-4">
+                    <Link
+                      href="/book-now"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center border-2 border-brand-black bg-[#758BFD] px-4 py-4 text-center font-bold uppercase tracking-[0.2em] text-brand-white transition-colors hover:bg-brand-black hover:text-brand-white"
                     >
-                      TW
-                    </a>
-                    <a
-                      href="#"
-                      className="border-2 border-brand-black bg-brand-white px-4 py-3 text-center font-bold tracking-[0.2em] transition-colors hover:bg-brand-black hover:text-brand-white"
-                    >
-                      IG
-                    </a>
+                      Book Now
+                    </Link>
                   </motion.div>
                 </div>
               </div>
