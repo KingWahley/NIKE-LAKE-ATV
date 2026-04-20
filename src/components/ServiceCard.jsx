@@ -138,7 +138,8 @@ export default function ServiceCard({
         {/* Reveal Arrow */}
         <motion.div
           variants={cardItemVariants}
-          className="relative z-10 ml-auto self-center pl-8 text-brand-black transition-all duration-300 group-hover:-rotate-45 group-hover:text-[#758BFD] md:pl-0 md:opacity-0 md:group-hover:opacity-100"
+          className="relative z-10 ml-auto self-center pl-8 
+          text-[#758BFD] md:text-brand-black transition-all duration-300 group-hover:-rotate-45 group-hover:text-[#758BFD] md:pl-0 md:opacity-0 md:group-hover:opacity-100"
         >
           <ArrowRight className="w-12 h-12 md:w-20 md:h-20" strokeWidth={3} />
         </motion.div>
